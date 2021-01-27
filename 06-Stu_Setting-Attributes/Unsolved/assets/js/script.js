@@ -2,6 +2,10 @@ var site1El = document.querySelector(".site1");
 var site2El = document.querySelector(".site2");
 var site3El = document.querySelector(".site3");
 
+var h4El = document.querySelectorAll("h4");
+
+h4El.setAttribute("style", "color:blue", "font-size: 30px", "font-weight: bold");
+
 site1El.children[0].textContent = "Site 1";
 site1El.children[1].setAttribute("href", "https://google.com");
 site1El.children[1].children[0].setAttribute("src", "assets/images/image_1.jpg");
