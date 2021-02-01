@@ -12,6 +12,9 @@ function calculateTotal(total, tipAmount) {
 }
 
 function addTip(event) {
+  // Prevent default action
+  event.preventDefault();
+  // Store tip and total calculations in the variables
   var tipPercentage = tipEl.value * .01;
   var total = totalEl.value;
   var tipAmount = calculateTip(total, tipPercentage);
