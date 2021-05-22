@@ -21,7 +21,22 @@ site3El.children[1].children[0].setAttribute("alt", "women working");
 site3El.children[1].children[0].setAttribute("style", "padding:10px;");
 
 // Write Your Code Below
+// Store all elements into a single variable
 let headingTags = document.querySelectorAll("h4");
 
-for (var i = 0; i < headingTags.length; i++)
-    headingTags[i].setAttribute("style", "color: blue; font-size:30px; font-weight:bold; padding-left: 10px; margin: auto");
+// for (var i = 0; i < headingTags.length; i++)
+//     headingTags[i].setAttribute("style", "color: blue; font-size:30px; font-weight:bold; padding-left: 10px; margin: auto");
+
+// OR
+
+for (let h4 of headingTags) {
+  h4.style.color = "blue"
+  h4.style.setProperty('font-weight', 'bolder')
+  // h4.style.fontWeight = "bolder"
+  h4.style.setProperty('font-size', '30px')
+  // h4.style.fontSize = "30px"
+  h4.style.paddingLeft = "10px"
+  h4.style.margin = "0"
+
+  // h4.setAttribute("style", "color: blue; font-size:30px; font-weight:bold; padding-left: 10px; margin: auto");
+}
