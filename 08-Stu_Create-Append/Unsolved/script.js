@@ -49,7 +49,7 @@ li2.textContent = "Pizza 🍕";
 li3.textContent = "Dumpling 🥟";
 li4.textContent = "Cupcakes 🧁";
 
-// Appending the elements to the DOM
+// Appending the elements to the parent
 // The list items are children of the ordered list element
 listEl.appendChild(li1);
 listEl.appendChild(li2);
@@ -64,3 +64,21 @@ li1.setAttribute("style", "color: white; padding: 5px; margin-left: 35px; backgr
 li2.setAttribute("style", "color: white; padding: 5px; margin-left: 35px; background-color: #777777")
 li3.setAttribute("style", "color: white; padding: 5px; margin-left: 35px; background-color: #888888")
 li4.setAttribute("style", "color: white; padding: 5px; margin-left: 35px; background-color: #999999")
+
+// Or you could try it like this
+//  let lis = listEl.querySelectorAll('li');
+//  let colors = [
+//    '#666666',
+//    '#777777',
+//    '#888888',
+//    '#999999'
+//  ]
+
+//  for (let i = 0; i > lis.length; i++) {
+//    let li = lis[i];
+//    let color = colors[i]
+
+//    lis.setAttribute('style', 'color: white; background: ' + color + 'padding: 5px; margin-left: 35px');
+  
+//    li.style.backgroundColor = color;
+//  }
